@@ -78,7 +78,7 @@ nav a {
   display: block;
 }
 
-nav a:hover {
+nav a:hover, nav [class*="fa-"]:hover {
   color: var(--magenta);
 }
 
@@ -86,6 +86,23 @@ nav [class*="fa-"] {
   font-size: 150%;
   color: var(--aqua);
 }
+
+nav h1 [class*="fa-"] {
+  font-size: 100%;
+  color: var(--aqua);
+}
+
+.button {
+  background-color: var(--magenta);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.button:hover {
+  color: var(--white);
+  background-color: var(--hotmag);
+}
+
 /* Intro Styles */
 
 #intro {
@@ -123,4 +140,17 @@ nav [class*="fa-"] {
 
 #contact a {
   margin-top: 3rem;
+}
+
+@media (min-width: 850px) {
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  nav li:first-child {
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+  }
 }
