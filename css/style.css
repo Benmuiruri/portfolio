@@ -66,6 +66,10 @@ img {
   height: 2px;
 }
 
+.highlited-text {
+  color: var(--magenta);
+}
+
 /* navbar */
 
 nav {
@@ -217,6 +221,53 @@ nav h1 [class*='fa-'] {
   padding: 0.8rem;
 }
 
+/* About me */
+#about-me {
+  padding: 4rem 1rem;
+}
+
+#about-me h2 {
+  font-size: 2rem;
+  margin-bottom: calc(2.5rem * 1.5);
+}
+#about-me h3 {
+  color: var(--aqua);
+  text-transform: capitalize;
+}
+
+#about-me h4 {
+  font-size: 1rem;
+  font-family: var(--mono);
+}
+
+.my-desc {
+  background-color: var(--black);
+  padding: 1rem;
+  border-radius: 10px;
+  color: var(--white);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#about-me ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 0.8rem;
+  font-size: 1rem;
+}
+
+#projects img {
+  margin: 1.5rem 0 3rem 0;
+  border-left: 1px solid var(--aqua);
+  border-top: 1px solid var(--aqua);
+  border-radius: 25px;
+  padding: 0.8rem;
+}
+
 /* Footer */
 footer {
   display: flex;
@@ -261,11 +312,11 @@ footer ul {
     grid-template-columns: repeat(10, 1fr);
     gap: 0.8rem;
   }
-  #projects {
+  #projects, #about-me {
     max-width: 1200px;
     margin: 0 auto;
   }
-  #projects img {
+  #projects img, #about-me img {
     grid-column: 1/6;
     grid-row: 1/2;
   }
@@ -275,7 +326,7 @@ footer ul {
     order: 2;
     text-align: right;
   }
-  #projects ul {
+  #projects ul, #about-me ul {
     justify-content: flex-end;
   }
 
